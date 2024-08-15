@@ -22,4 +22,12 @@ public class GameController {
     public List<Game> GameList(){
         return gameService.GetGameList();
     }
+
+    public void AddNewGame(Game newGame){
+        gameService.SaveGame(newGame);
+    }
+
+    public void RemoveGame(int id){
+        gameService.RemoveGame(id);
+    }
 }
