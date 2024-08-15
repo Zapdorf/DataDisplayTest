@@ -11,10 +11,10 @@ public class Game {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int ID;
-    public String Game_Name;
-    public int Release_Year;
-    public String Platform;
+    private int ID;
+    private String Game_Name;
+    private int Release_Year;
+    private String Platform;
 
     public Game(){
 
